@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { CategoryNews, Home, Layout, Categories, PageNotFound, Search } from "../pages";
+import { CategoryNews, Home, Layout, Categories, PageNotFound, Search, Login } from "../pages";
 import { getNewsByCategory } from "../pages/CategoryNews";
 
 export const appRouter = createBrowserRouter([
@@ -28,4 +28,8 @@ export const appRouter = createBrowserRouter([
       },
     ],
   },
+  {
+    path: '/login',
+    element: <Login />
+  }
 ]);
